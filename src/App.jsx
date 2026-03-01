@@ -1,6 +1,7 @@
 import useHangman from "./hooks/useHangman";
 import WordDisplay from "./components/WordDisplay";
 import Keyboard from "./components/Keyboard";
+import HangmanDrawing from "./components/HangmanDrawing";
 
 export default function App() {
   const {
@@ -26,8 +27,12 @@ export default function App() {
 
       <Keyboard
         guessLetter={guessLetter}
+        guessedLetters={guessedLetters}
+        wrongLetters={wrongLetters}
         disabled={isVictory || isGameOver}
       />
+
+      <HangmanDrawing wrongLetters={wrongLetters} />
 
       {(isVictory || isGameOver) && (
         <div style={{ marginTop: "20px" }}>
