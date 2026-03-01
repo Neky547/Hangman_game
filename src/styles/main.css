@@ -1,22 +1,36 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #9faece;
-  padding-top: 200px;
+    font-family: Arial, sans-serif;
+    background: url("background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    padding-top: 150px;
 }
 
 h1 {
-  color: #4d7079;
+    color: #bd7e43;
 }
 
 h2 {
-    color: #1e2b2e;
+    color: #bd7e43;
+}
+
+.box {
+  background-color: rgba(255, 255, 255, 0.85); /* fond clair semi-transparent */
+  padding: 20px 30px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  margin: 0;
 }
 
 button {
-  transition: 0.2s ease;
+    transition: 0.2s ease;
 }
 
 button:hover {
-  transform: scale(1.1);
-  color: #567e88;
+    transform: scale(1.1);
+    color: #8a500e;
 }

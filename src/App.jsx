@@ -16,14 +16,22 @@ export default function App() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
-      <h1>Jeu du Pendu</h1>
+      <div className="box">
+        <h1>Jeu du Pendu</h1>
+      </div>
 
       <WordDisplay word={word} guessedLetters={guessedLetters} />
 
       <p>Erreurs : {wrongLetters.length} / 9</p>
 
-      {isVictory && <h2>🎉 Victoire !</h2>}
-      {isGameOver && <h2>💀 Perdu !<br></br> Le mot était : {word}</h2>}
+
+      {/* Message victoire / défaite */}
+      {(isVictory || isGameOver) && (
+        <div className="box" style={{ marginTop: "20px" }}>
+          {isVictory && <h2>🎉 Gagné !</h2>}
+          {isGameOver && <h2>💀 Perdu ! Le mot était : {word}</h2>}
+        </div>
+      )}
 
       <Keyboard
         guessLetter={guessLetter}
