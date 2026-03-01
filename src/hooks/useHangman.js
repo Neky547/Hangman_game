@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { words } from "../data/words";
 
-const MAX_ERRORS = 6;
+const MAX_ERRORS = 9;
 
 export default function useHangman() {
   const [word, setWord] = useState("");
