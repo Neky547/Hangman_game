@@ -4,7 +4,7 @@ export default function HangmanDrawing({ wrongLetters }) {
   return (
     <svg height="250" width="200">
       {/* Base */}
-      <line x1="10" y1="240" x2="190" y2="240" stroke="#5c2c04" strokeWidth="20" />
+      <line x1="10" y1="240" x2="190" y2="240" stroke="#c25b07" strokeWidth="20" />
 
       {/* Poteau vertical */}
       {errors >= 1 && <line x1="50" y1="240" x2="50" y2="20" stroke="#5c2c04" strokeWidth="8" />}
