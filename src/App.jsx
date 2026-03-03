@@ -28,7 +28,7 @@ export default function App() {
         <p>Erreurs : {wrongLetters.length} / 9</p>
 
         {/* Clavier */}
-        <div class="keyborard">
+        <div className="keyborard">
           <Keyboard
             guessLetter={guessLetter}
             guessedLetters={guessedLetters}
@@ -38,7 +38,7 @@ export default function App() {
         </div>
 
         {/* Dessin */}
-        <div class="hangmanDrawing">
+        <div className="hangmanDrawing">
           <HangmanDrawing wrongLetters={wrongLetters} />
         </div>
 

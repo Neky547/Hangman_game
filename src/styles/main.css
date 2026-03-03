@@ -1,8 +1,17 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background: url("/background.jpg") no-repeat center center fixed;
-    background-size: cover;
-    padding-top: 150px;
+  font-family: Arial, sans-serif;
+
+  min-height: 100dvh; /* important pour mobile */
+
+  background-image: url("/western-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -26,8 +35,7 @@ h2 {
   position: fixed;
   inset: 0;
   z-index: -1;
-
-  background-image: url("/western-bg.png");
+  background-image: url("/background.png");
   background-size: cover;
   background-position: center;
 }
