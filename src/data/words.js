@@ -1,7 +1,5 @@
 export const words = [
-  "ordinateur",
-  "javascript",
-  "react",
-  "portfolio",
-  "developpeur"
+  "zigounette",
+  "foufoune",
+  "quoicoubeh",
 ];
