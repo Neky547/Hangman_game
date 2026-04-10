@@ -1,8 +1,9 @@
 export const words = [
-  "zigounette",
-  "foufoune",
-  "quoicoubeh",
-  "zizi",
-  "caca",
-  "fesses"
+  "coquelicot",
+  "cactus",
+  "jasmin",
+  "hibiscus",
+  "rosier",
+  "lierre",
+  "ficus"
 ];
